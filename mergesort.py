@@ -2,8 +2,9 @@
 A learning implementation of mergesort.
 """
 
-import random
+# import random
 import math
+import sort_tester
 
 def mergesort(unsorted_list):
     if len(unsorted_list) > 1:
@@ -39,19 +40,21 @@ def merge(lhs, rhs):
 
 if __name__ == "__main__":
     # Run Some Tests
-    for i in range(0, 20):
-        print("--")
-        rand_list = []
-        for i in range(0, random.randint(5, 20)):
-            rand_list.append(random.randint(1, 100))
-        original_list = rand_list[:]
-        sorted_list = mergesort(rand_list)
-        print("ol is: ", original_list)
-        print("rl is: ", rand_list)
-        print("sl is:", sorted_list)
-        original_list.sort()
-        if original_list != sorted_list:
-            print("sort() gives: ", original_list)
-            print("wrong")
-        else:
-            print("good")
+    tester = sort_tester.Tester(mergesort)
+    tester.test()
+    # for i in range(0, 20):
+        # print("--")
+        # rand_list = []
+        # for i in range(0, random.randint(5, 20)):
+            # rand_list.append(random.randint(1, 100))
+        # original_list = rand_list[:]
+        # sorted_list = mergesort(rand_list)
+        # print("ol is: ", original_list)
+        # print("rl is: ", rand_list)
+        # print("sl is:", sorted_list)
+        # original_list.sort()
+        # if original_list != sorted_list:
+            # print("sort() gives: ", original_list)
+            # print("wrong")
+        # else:
+            # print("good")
