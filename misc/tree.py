@@ -34,7 +34,6 @@ class Node(object):
         self.next = next
         self.prev = prev
 
-<<<<<<< HEAD
     def Traverse(self):
         ptr = self
         ret = [self.v]
@@ -50,11 +49,7 @@ class Node(object):
             ptr = ptr.prev
             ret.append(ptr.v)
         return ret
-=======
->>>>>>> 89d6585b5143a4fae5bd86338a94909163697ba9
 
-def someFunc():
-    pass
 
 if __name__ == '__main__':
     unittest.main()
