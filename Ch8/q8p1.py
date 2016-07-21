@@ -118,5 +118,7 @@ def MergeDLL(node_a, node_b):
             break
     return ptr_head
 
+
+
 if __name__ == '__main__':
     unittest.main()

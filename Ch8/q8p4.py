@@ -12,6 +12,7 @@ class MyTest(unittest.TestCase):
         c = misc.tree.Node(7, next=d)
         b = misc.tree.Node(5, next=c)
         a = misc.tree.Node(2, next=b)
+        self.assert(Cyclic(a), True)
         pass
 
 
