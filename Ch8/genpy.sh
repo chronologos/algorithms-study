@@ -1,1 +1,0 @@
-/Users/yiyantay/Desktop/elements-of-programming/Ch6/genpy.sh

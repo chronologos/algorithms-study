@@ -1,1 +1,6 @@
-/Users/yiyantay/Desktop/elements-of-programming/Ch6/genpy.sh
+#! /bin/bash
+if [[ ! $@ ]];
+    then echo "usage: genpy.sh name_of_py_script.py";
+fi
+cp "../template.py" $1
+
